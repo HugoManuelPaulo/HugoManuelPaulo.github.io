@@ -407,7 +407,10 @@
               <span class="contact-note mono">English or Portuguese · Based in Purmerend, Netherlands</span>
             </div>
 
-            <form class="contact-form" id="project-form">
+            <form class="contact-form" id="project-form" action="https://formsubmit.co/hugomanuelpaulo@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New portfolio project enquiry">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://hugomanuelpaulo.github.io/?sent=true#contact">
               <div class="form-grid">
                 <div class="field">
                   <label for="contact-name">Your name</label>
@@ -432,8 +435,8 @@
                   <textarea id="contact-message" name="message" placeholder="Share the context, challenge and what a good outcome would look like." required></textarea>
                 </div>
               </div>
-              <button class="button primary" type="submit">Prepare my message →</button>
-              <p class="form-status" id="form-status" aria-live="polite">Your email application will open with the message ready to send.</p>
+              <button class="button primary" type="submit">Send project enquiry →</button>
+              <p class="form-status" id="form-status" aria-live="polite">Your message will be delivered to my email. I will reply to the address you provide.</p>
             </form>
           </div>
         </div>
@@ -447,18 +450,10 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    document.getElementById('project-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const data = new FormData(event.currentTarget);
-      const name = data.get('name');
-      const email = data.get('email');
-      const area = data.get('area');
-      const message = data.get('message');
-      const subject = `Project enquiry — ${area}`;
-      const body = `Hello Hugo,\n\nMy name is ${name}.\nMy email is ${email}.\n\nI would like to discuss: ${area}.\n\n${message}\n\nBest regards,\n${name}`;
-      document.getElementById('form-status').textContent = 'Opening your email application…';
-      window.location.href = `mailto:hugomanuelpaulo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('sent') === 'true') {
+      document.getElementById('form-status').textContent = 'Thank you — your message has been sent successfully.';
+    }
   </script>
 </body>
 </html>
