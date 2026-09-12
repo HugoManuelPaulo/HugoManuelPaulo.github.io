@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hugo Paulo — QA Automation, Business Analytics, AI and Process Automation portfolio.">
+  <meta name="theme-color" content="#07111f">
+  <link rel="canonical" href="https://hugomanuelpaulo.github.io/">
+  <title>Hugo Paulo — QA Automation & Business Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307111f'/%3E%3Cpath d='M17 16v32h7V35h16v13h7V16h-7v13H24V16z' fill='%234ea1ff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #07111f;
+      --surface: #0d1a2a;
+      --surface-2: #132338;
+      --line: #243951;
+      --text: #f4f7fb;
+      --muted: #a8b7c8;
+      --blue: #4ea1ff;
+      --gold: #f2c94c;
+      --green: #61d6a7;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        linear-gradient(rgba(78, 161, 255, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(78, 161, 255, .035) 1px, transparent 1px),
+        var(--bg);
+      background-size: 44px 44px;
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+    .mono { font-family: "IBM Plex Mono", monospace; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(7, 17, 31, .84);
+      border-bottom: 1px solid rgba(168, 183, 200, .14);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand { text-decoration: none; font-weight: 700; letter-spacing: -.03em; font-size: 1.15rem; }
+    .brand span { color: var(--blue); }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .92rem; }
+    .nav-links a:hover { color: var(--text); }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 46px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); border-color: var(--blue); }
+    .button.primary { background: var(--blue); color: #04101e; border-color: var(--blue); }
+    .button.primary:hover { background: #78b7ff; }
+    .button.small { min-height: 40px; padding-inline: 14px; font-size: .9rem; }
+
+    .hero {
+      min-height: calc(100vh - 72px);
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      align-items: center;
+      gap: 70px;
+      padding: 72px 0;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 { line-height: 1.08; margin: 0; }
+    h1 { font-size: clamp(3.2rem, 7.5vw, 6.8rem); letter-spacing: -.065em; max-width: 900px; }
+    h1 span { color: var(--blue); }
+    .hero-copy > p { max-width: 720px; margin: 28px 0 0; color: var(--muted); font-size: clamp(1.08rem, 1.7vw, 1.3rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .location { margin-top: 24px; color: var(--muted); font-size: .92rem; }
+
+    .signal-panel {
+      position: relative;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(150deg, rgba(19,35,56,.97), rgba(7,17,31,.97));
+      box-shadow: 0 28px 90px rgba(0, 0, 0, .34);
+    }
+    .signal-panel::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: 18px;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(78,161,255,.45), transparent 42%);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      padding: 1px;
+    }
+    .metric { padding: 22px; border-bottom: 1px solid var(--line); }
+    .metric:last-child { border-bottom: 0; }
+    .metric strong { display: block; font-size: 2.1rem; letter-spacing: -.04em; }
+    .metric span { color: var(--muted); font-size: .9rem; }
+    .metric:nth-child(2) strong { color: var(--gold); }
+    .metric:nth-child(3) strong { color: var(--green); }
+
+    section { padding: 96px 0; }
+    .section-head { display: grid; grid-template-columns: .55fr 1.45fr; gap: 40px; margin-bottom: 46px; align-items: end; }
+    .section-number { color: var(--blue); font-size: .82rem; letter-spacing: .08em; }
+    h2 { font-size: clamp(2.3rem, 5vw, 4.5rem); letter-spacing: -.055em; }
+    .section-intro { max-width: 650px; color: var(--muted); font-size: 1.08rem; margin: 18px 0 0; }
+
+    .projects { display: grid; gap: 18px; }
+    .project {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 34px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(13, 26, 42, .92);
+      transition: border-color .2s ease, transform .2s ease;
+    }
+    .project:hover { border-color: rgba(78, 161, 255, .7); transform: translateY(-2px); }
+    .project h3 { font-size: clamp(1.45rem, 3vw, 2.15rem); letter-spacing: -.035em; }
+    .project p { color: var(--muted); margin: 15px 0 20px; }
+    .project-label { color: var(--green); text-transform: uppercase; letter-spacing: .1em; font-size: .72rem; font-weight: 700; margin-bottom: 12px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { padding: 6px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: #d8e4f0; font-size: .8rem; }
+
+    .project-proof { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; align-content: start; }
+    .proof { min-height: 106px; padding: 17px; background: #081522; border: 1px solid var(--line); border-radius: 12px; }
+    .proof strong { display: block; font-size: 1.55rem; letter-spacing: -.035em; color: var(--gold); }
+    .proof span { color: var(--muted); font-size: .82rem; }
+    .proof.wide { grid-column: 1 / -1; }
+    .project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+
+    .phone-stack { display: flex; justify-content: center; align-items: center; gap: 12px; min-height: 250px; overflow: hidden; }
+    .phone-stack img { width: 126px; border-radius: 14px; box-shadow: 0 18px 50px rgba(0,0,0,.35); border: 1px solid var(--line); }
+    .phone-stack img:first-child { transform: rotate(-3deg) translateY(8px); }
+    .phone-stack img:last-child { transform: rotate(3deg) translateY(-8px); }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .skill-card { padding: 28px; border-top: 2px solid var(--blue); background: rgba(13, 26, 42, .84); }
+    .skill-card h3 { font-size: 1.2rem; margin-bottom: 16px; }
+    .skill-card p { color: var(--muted); margin: 0; }
+
+    .timeline { border-left: 1px solid var(--line); margin-left: 8px; }
+    .timeline-item { position: relative; padding: 0 0 42px 34px; display: grid; grid-template-columns: .58fr 1.42fr; gap: 35px; }
+    .timeline-item::before { content: ""; position: absolute; left: -6px; top: 4px; width: 11px; height: 11px; background: var(--blue); border-radius: 50%; box-shadow: 0 0 0 6px var(--bg); }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-date { color: var(--green); font-family: "IBM Plex Mono", monospace; font-size: .88rem; }
+    .timeline-item h3 { font-size: 1.35rem; }
+    .timeline-item p { color: var(--muted); margin: 10px 0 0; }
+
+    .contact {
+      padding: 58px;
+      border: 1px solid rgba(78,161,255,.42);
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(78,161,255,.14), rgba(97,214,167,.06));
+      text-align: center;
+    }
+    .contact h2 { max-width: 850px; margin: 0 auto; }
+    .contact p { max-width: 660px; margin: 20px auto 28px; color: var(--muted); font-size: 1.08rem; }
+    .contact-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+
+    footer { padding: 30px 0 42px; color: var(--muted); font-size: .88rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding-top: 28px; }
+
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; gap: 48px; padding: 72px 0 62px; }
+      .signal-panel { max-width: 560px; }
+      .section-head, .project, .timeline-item { grid-template-columns: 1fr; }
+      .section-head { gap: 12px; }
+      .timeline-item { gap: 8px; }
+      .nav-links a:not(.button) { display: none; }
+      h1 { font-size: clamp(3rem, 14vw, 5rem); }
+    }
+
+    @media (max-width: 600px) {
+      .wrap { width: min(calc(100% - 28px), var(--max)); }
+      .nav { min-height: 64px; }
+      .nav-links { gap: 8px; }
+      .nav-links .button { padding-inline: 12px; min-height: 40px; }
+      section { padding: 72px 0; }
+      .project { padding: 24px; }
+      .project-proof, .skills-grid { grid-template-columns: 1fr; }
+      .proof.wide { grid-column: auto; }
+      .contact { padding: 38px 22px; }
+      footer .wrap { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary navigation">
+      <a class="brand mono" href="#top">Hugo<span>.</span>Paulo</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a class="button small" href="https://www.linkedin.com/in/hugomanuelpaulo" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow mono">Quality mindset. Technical execution.</p>
+        <h1>Hugo Paulo<span>.</span></h1>
+        <p>QA Automation, Business Analytics and AI-driven process improvement — backed by hands-on experience in quality control, traceability and operational leadership.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore selected work ↓</a>
+          <a class="button" href="https://github.com/HugoManuelPaulo" target="_blank" rel="noreferrer">View GitHub ↗</a>
+        </div>
+        <p class="location mono">Purmerend, Netherlands · Open to English-speaking teams</p>
+      </div>
+
+      <aside class="signal-panel" aria-label="Career highlights">
+        <div class="metric"><strong>5+ years</strong><span>Quality and process improvement</span></div>
+        <div class="metric"><strong>494</strong><span>Accounting records automated and validated</span></div>
+        <div class="metric"><strong>24 months</strong><span>Revenue data modeled for executive analysis</span></div>
+      </aside>
+    </div>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-number mono">01 / SELECTED WORK</p>
+          <div>
+            <h2>Evidence over claims.</h2>
+            <p class="section-intro">Projects that connect software engineering with measurable controls, reliable data and practical business decisions.</p>
+          </div>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div>
+              <div class="project-label mono">Business Analytics · 2026</div>
+              <h3>Revenue Guard</h3>
+              <p>An executive customer-retention dashboard designed to show which account portfolio requires attention and why. The project combines controlled SQL views, authentication, access rules and validation evidence.</p>
+              <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RLS</span><span class="tag">Lovable</span></div>
+              <div class="project-links"><span class="button small" aria-label="Revenue Guard is a private academic repository">Private academic project</span></div>
+            </div>
+            <div class="project-proof" aria-label="Revenue Guard project highlights">
+              <div class="proof"><strong>7</strong><span>Account portfolios</span></div>
+              <div class="proof"><strong>24</strong><span>Monthly periods</span></div>
+              <div class="proof wide"><strong>Controlled metrics</strong><span>Business calculations remain in database views, not the frontend.</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="project-label mono">Process Automation · 2026</div>
+              <h3>Aurora Accounts Payable</h3>
+              <p>An automation and control workflow for accounting records, built to validate data, flag exceptions and retain auditable evidence instead of relying on manual review.</p>
+              <div class="tags"><span class="tag">Google Sheets</span><span class="tag">Apps Script</span><span class="tag">Gemini</span><span class="tag">Data Validation</span><span class="tag">AI Governance</span></div>
+              <div class="project-links"><span class="button small" aria-label="Aurora is an academic case study">Academic case study</span></div>
+            </div>
+            <div class="project-proof" aria-label="Aurora project highlights">
+              <div class="proof"><strong>494</strong><span>Records processed</span></div>
+              <div class="proof"><strong>2 routes</strong><span>Alpha and Omega controls</span></div>
+              <div class="proof wide"><strong>Audit-ready</strong><span>Exceptions, decisions and controls designed for traceability.</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="project-label mono">Full-stack Web · 2025</div>
+              <h3>Dental Appointment Management</h3>
+              <p>A role-based web application created as a Software Engineering graduation project. It covers patient records, scheduling, rescheduling, procedures and email reminders.</p>
+              <div class="tags"><span class="tag">PHP 8.2</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">FullCalendar</span></div>
+              <div class="project-links"><a class="button small" href="https://github.com/HugoManuelPaulo/clinica-oral-care" target="_blank" rel="noreferrer">View repository ↗</a></div>
+            </div>
+            <div class="project-proof" aria-label="Dental project capabilities">
+              <div class="proof"><strong>3 roles</strong><span>Patient, dentist and receptionist</span></div>
+              <div class="proof"><strong>Full flow</strong><span>Booking to procedure history</span></div>
+              <div class="proof wide"><strong>Email workflow</strong><span>Confirmations and reminders through SendGrid and PHPMailer.</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="project-label mono">Android · Kotlin</div>
+              <h3>BMI Calculator</h3>
+              <p>A native Android application that captures weight and height, calculates BMI and presents the result in a second activity. Built with Kotlin and XML layouts.</p>
+              <div class="tags"><span class="tag">Kotlin</span><span class="tag">Android Studio</span><span class="tag">XML</span><span class="tag">Gradle</span></div>
+              <div class="project-links"><a class="button small" href="https://github.com/HugoManuelPaulo/CalculadoraIMCandroidapp" target="_blank" rel="noreferrer">View repository ↗</a></div>
+            </div>
+            <div class="phone-stack" aria-label="BMI Calculator screenshots">
+              <img src="https://raw.githubusercontent.com/HugoManuelPaulo/CalculadoraIMCandroidapp/master/image1.png" alt="BMI Calculator input screen" loading="lazy">
+              <img src="https://raw.githubusercontent.com/HugoManuelPaulo/CalculadoraIMCandroidapp/master/image3.png" alt="BMI Calculator result screen" loading="lazy">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-number mono">02 / CAPABILITIES</p>
+          <div><h2>Built around quality.</h2><p class="section-intro">A practical toolkit spanning software testing, data analysis, automation and development.</p></div>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><h3>Testing & QA</h3><p>Selenium · PyTest · Postman · REST API validation · Test design · Defect reporting · Root-cause analysis · Jira · Agile/Scrum</p></article>
+          <article class="skill-card"><h3>Data & Business Analytics</h3><p>SQL · PostgreSQL · MySQL · Excel · KPI analysis · Dashboards · Data validation · Supabase · Access controls</p></article>
+          <article class="skill-card"><h3>Automation & AI</h3><p>Python for academic and personal projects · Google Apps Script · Workflow automation · Generative AI · Prompt engineering · AI governance</p></article>
+          <article class="skill-card"><h3>Software Development</h3><p>Kotlin · Java · JavaScript · PHP · HTML · CSS · Git/GitHub · Docker and CI/CD fundamentals</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-number mono">03 / EXPERIENCE</p>
+          <div><h2>Operations meet engineering.</h2><p class="section-intro">Quality discipline developed in real production environments, now applied to software and data systems.</p></div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">SEP 2025 — PRESENT</div><div><h3>Warehouse Supervisor · A2Global Electronics</h3><p>Operational coordination, traceability, discrepancy management and continuous process improvement in an international electronics environment.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">APR 2022 — AUG 2025</div><div><h3>Quality Control Inspector · A2Global Electronics</h3><p>Product and process inspection, quality documentation, non-conformity handling and evidence-based control.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">2026</div><div><h3>MBA · Artificial Intelligence & Business Analytics</h3><p>Completing an applied MBA focused on analytics, automation, governance and measurable business controls.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">2025</div><div><h3>B.Sc. · Software Engineering</h3><p>UNIGRAN graduate with projects across web development, Android, databases and software quality.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <p class="eyebrow mono">LET'S CONNECT</p>
+          <h2>Looking for quality that reaches beyond the checklist?</h2>
+          <p>I am open to QA Automation, Data/BI, AI Automation and Process Improvement opportunities in international, English-speaking teams.</p>
+          <div class="contact-actions">
+            <a class="button primary" href="https://www.linkedin.com/in/hugomanuelpaulo" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+            <a class="button" href="https://github.com/HugoManuelPaulo" target="_blank" rel="noreferrer">Explore GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><span>© <span id="year">2026</span> Hugo Paulo</span><span class="mono">Purmerend · Netherlands</span></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
