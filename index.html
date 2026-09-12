@@ -218,6 +218,19 @@
     .field input::placeholder, .field textarea::placeholder { color: #75889c; }
     .contact-form .button { width: 100%; margin-top: 18px; }
     .form-status { min-height: 24px; margin: 10px 0 0; color: var(--green); font-size: .88rem; }
+    .form-dialog {
+      width: min(calc(100% - 32px), 440px);
+      padding: 30px;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--blue);
+      border-radius: 16px;
+      box-shadow: 0 28px 90px rgba(0, 0, 0, .55);
+    }
+    .form-dialog::backdrop { background: rgba(3, 9, 17, .76); backdrop-filter: blur(4px); }
+    .form-dialog h3 { margin-bottom: 12px; font-size: 1.5rem; }
+    .form-dialog p { margin: 0 0 22px; color: var(--muted); }
+    .form-dialog .button { width: 100%; }
 
     footer { padding: 30px 0 42px; color: var(--muted); font-size: .88rem; }
     footer .wrap { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding-top: 28px; }
@@ -407,10 +420,10 @@
               <span class="contact-note mono">English or Portuguese · Based in Purmerend, Netherlands</span>
             </div>
 
-            <form class="contact-form" id="project-form" action="https://formsubmit.co/hugomanuelpaulo@gmail.com" method="POST">
+            <form class="contact-form" id="project-form" action="https://formsubmit.co/ajax/hugomanuelpaulo@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="New portfolio project enquiry">
               <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_next" value="https://hugomanuelpaulo.github.io/?sent=true#contact">
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
               <div class="form-grid">
                 <div class="field">
                   <label for="contact-name">Your name</label>
@@ -438,6 +451,11 @@
               <button class="button primary" type="submit">Send project enquiry →</button>
               <p class="form-status" id="form-status" aria-live="polite">Your message will be delivered to my email. I will reply to the address you provide.</p>
             </form>
+            <dialog class="form-dialog" id="form-dialog" aria-labelledby="dialog-title">
+              <h3 id="dialog-title">Message sent</h3>
+              <p>Thank you for getting in touch. I will reply to the email address you provided.</p>
+              <button class="button primary" id="dialog-close" type="button">Close</button>
+            </dialog>
           </div>
         </div>
       </div>
@@ -450,10 +468,37 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('sent') === 'true') {
-      document.getElementById('form-status').textContent = 'Thank you — your message has been sent successfully.';
-    }
+    const form = document.getElementById('project-form');
+    const status = document.getElementById('form-status');
+    const dialog = document.getElementById('form-dialog');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      submitButton.disabled = true;
+      status.textContent = 'Sending your message…';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form)
+        });
+
+        if (!response.ok) throw new Error('Submission failed');
+        form.reset();
+        status.textContent = 'Your message has been sent successfully.';
+        dialog.showModal();
+      } catch (error) {
+        status.textContent = 'The message could not be sent. Please try again or use the direct email button.';
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+
+    document.getElementById('dialog-close').addEventListener('click', function () {
+      dialog.close();
+    });
   </script>
 </body>
 </html>
