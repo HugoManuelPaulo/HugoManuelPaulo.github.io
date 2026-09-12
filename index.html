@@ -181,6 +181,8 @@
     .skill-card p { color: var(--muted); margin: 0; }
 
     .timeline { border-left: 1px solid var(--line); margin-left: 8px; }
+    .timeline-group { margin: 0 0 28px 34px; color: var(--blue); font-size: .9rem; letter-spacing: .09em; text-transform: uppercase; }
+    .timeline-group:not(:first-child) { margin-top: 12px; padding-top: 30px; border-top: 1px solid var(--line); }
     .timeline-item { position: relative; padding: 0 0 42px 34px; display: grid; grid-template-columns: .58fr 1.42fr; gap: 35px; }
     .timeline-item::before { content: ""; position: absolute; left: -6px; top: 4px; width: 11px; height: 11px; background: var(--blue); border-radius: 50%; box-shadow: 0 0 0 6px var(--bg); }
     .timeline-item:last-child { padding-bottom: 0; }
@@ -397,8 +399,10 @@
           <div><h2>Operations meet engineering.</h2><p class="section-intro">Quality discipline developed in real production environments, now applied to software and data systems.</p></div>
         </div>
         <div class="timeline">
+          <h3 class="timeline-group mono">Professional Experience</h3>
           <article class="timeline-item"><div class="timeline-date">SEP 2025 — PRESENT</div><div><h3>Warehouse Supervisor · A2Global Electronics</h3><p>Operational coordination, traceability, discrepancy management and continuous process improvement in an international electronics environment.</p></div></article>
           <article class="timeline-item"><div class="timeline-date">APR 2022 — AUG 2025</div><div><h3>Quality Control Inspector · A2Global Electronics</h3><p>Product and process inspection, quality documentation, non-conformity handling and evidence-based control.</p></div></article>
+          <h3 class="timeline-group mono">Education</h3>
           <article class="timeline-item"><div class="timeline-date">2026</div><div><h3>MBA · Artificial Intelligence & Business Analytics</h3><p>Completing an applied MBA focused on analytics, automation, governance and measurable business controls.</p></div></article>
           <article class="timeline-item"><div class="timeline-date">2025</div><div><h3>B.Sc. · Software Engineering</h3><p>UNIGRAN graduate with projects across web development, Android, databases and software quality.</p></div></article>
         </div>
