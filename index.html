@@ -175,6 +175,10 @@
     .phone-stack img:first-child { transform: rotate(-3deg) translateY(8px); }
     .phone-stack img:last-child { transform: rotate(3deg) translateY(-8px); }
 
+    .project-visual { display: grid; align-content: start; gap: 12px; }
+    .project-visual img { width: 100%; border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 18px 50px rgba(0,0,0,.3); }
+    .project-visual span { color: var(--muted); font-size: .82rem; }
+
     .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .skill-card { padding: 28px; border-top: 2px solid var(--blue); background: rgba(13, 26, 42, .84); }
     .skill-card h3 { font-size: 1.2rem; margin-bottom: 16px; }
@@ -407,10 +411,9 @@
               <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">PHP 8.2</span><span class="tag">MySQL</span><span class="tag">GitHub Actions</span></div>
               <div class="project-links"><a class="button small" href="https://github.com/HugoManuelPaulo/clinica-oral-care" target="_blank" rel="noreferrer">View full project ↗</a><a class="button small" href="https://github.com/HugoManuelPaulo/clinica-oral-care/tree/main/mobile-app" target="_blank" rel="noreferrer">View mobile source ↗</a></div>
             </div>
-            <div class="project-proof" aria-label="Dental web and mobile project capabilities">
-              <div class="proof"><strong>2 platforms</strong><span>Responsive web system and cross-platform mobile app</span></div>
-              <div class="proof"><strong>3 roles</strong><span>Patient, dentist and receptionist workflows</span></div>
-              <div class="proof wide"><strong>Functional prototype</strong><span>Mobile navigation and patient journey implemented with demonstration data.</span></div>
+            <div class="project-visual" aria-label="OralCare web system preview">
+              <img src="https://raw.githubusercontent.com/HugoManuelPaulo/clinica-oral-care/main/img/tela_index.jpg.jpg" alt="OralCare dental clinic web system interface" loading="lazy">
+              <span class="mono">OralCare web system · Interface preview</span>
             </div>
           </article>
 
