@@ -1,5 +1,5 @@
 %PDF-1.4
-%ATS-CV
+%%%%%
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
@@ -10,143 +10,83 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 5501 >>
+<< /Length 3267 >>
 stream
-0.06 0.27 0.49 rg 0 810 595 32 re f
-BT /F2 25 Tf 0.06 0.16 0.28 rg 45 775 Td (HUGO PAULO) Tj ET
-BT /F2 11.5 Tf 0.12 0.43 0.72 rg 45 754 Td (QA AUTOMATION | SOFTWARE QUALITY | DATA ANALYTICS) Tj ET
-BT /F1 9.2 Tf 0.27 0.33 0.41 rg 45 735 Td (Purmerend, Netherlands | hugomanuelpaulo@gmail.com) Tj ET
-BT /F1 8.8 Tf 0.27 0.33 0.41 rg 45 720 Td (linkedin.com/in/hugomanuelpaulo | github.com/HugoManuelPaulo) Tj ET
-0.78 0.83 0.89 RG 0.7 w 45 708 m 550 708 l S
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 690 Td (PROFESSIONAL SUMMARY) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 683 m 550 683 l S
-BT /F1 9.7 Tf 0.09 0.14 0.22 rg 45 663 Td (Software Engineering graduate with an MBA in Artificial Intelligence and Business Analytics, building) Tj ET
-BT /F1 9.7 Tf 0.09 0.14 0.22 rg 45 649.7 Td (practical QA automation and data solutions. Hands-on portfolio experience with Selenium, Playwright,) Tj ET
-BT /F1 9.7 Tf 0.09 0.14 0.22 rg 45 636.4 Td (PyTest, Postman, REST API testing and GitHub Actions. Brings 5+ years of quality control,) Tj ET
-BT /F1 9.7 Tf 0.09 0.14 0.22 rg 45 623.1 Td (traceability, defect handling and process-improvement experience from international production and) Tj ET
-BT /F1 9.7 Tf 0.09 0.14 0.22 rg 45 609.8 Td (technology environments.) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 589.5 Td (LANGUAGES) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 582.5 m 550 582.5 l S
-BT /F2 9.5 Tf 0.09 0.14 0.22 rg 45 562.5 Td (Portuguese) Tj ET
-BT /F1 9.5 Tf 0.09 0.14 0.22 rg 105 562.5 Td (Native) Tj ET
-BT /F2 9.5 Tf 0.09 0.14 0.22 rg 205 562.5 Td (English) Tj ET
-BT /F1 9.5 Tf 0.09 0.14 0.22 rg 253 562.5 Td (Professional working proficiency) Tj ET
-BT /F2 9.5 Tf 0.09 0.14 0.22 rg 420 562.5 Td (Dutch) Tj ET
-BT /F1 9.5 Tf 0.09 0.14 0.22 rg 458 562.5 Td (A2 - elementary) Tj ET
-BT /F1 8.8 Tf 0.27 0.33 0.41 rg 45 534.5 Td (Currently improving Dutch; targeting English-speaking or international teams.) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 511.5 Td (CORE SKILLS) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 504.5 m 550 504.5 l S
-BT /F2 9.3 Tf 0.09 0.14 0.22 rg 45 484.5 Td (Testing & QA:) Tj ET
-BT /F1 9.3 Tf 0.09 0.14 0.22 rg 115 484.5 Td (Selenium, Playwright, PyTest, Postman, REST APIs, test design, defect reporting) Tj ET
-BT /F2 9.3 Tf 0.09 0.14 0.22 rg 45 468.5 Td (Automation:) Tj ET
-BT /F1 9.3 Tf 0.09 0.14 0.22 rg 108 468.5 Td (Python, TypeScript, JavaScript, GitHub Actions, CI/CD fundamentals) Tj ET
-BT /F2 9.3 Tf 0.09 0.14 0.22 rg 45 452.5 Td (Data & BI:) Tj ET
-BT /F1 9.3 Tf 0.09 0.14 0.22 rg 100 452.5 Td (SQL, PostgreSQL, MySQL, Excel, KPI dashboards, data validation, Supabase) Tj ET
-BT /F2 9.3 Tf 0.09 0.14 0.22 rg 45 436.5 Td (Development:) Tj ET
-BT /F1 9.3 Tf 0.09 0.14 0.22 rg 111 436.5 Td (Kotlin, Java, PHP, HTML/CSS, Git/GitHub, Agile/Scrum, Jira) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 409.5 Td (SELECTED TECHNICAL PROJECTS) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 402.5 m 550 402.5 l S
-BT /F2 11 Tf 0.09 0.14 0.22 rg 45 382.5 Td (QualityCart - E-commerce QA Automation) Tj ET
-BT /F1 8.8 Tf 0.35 0.40 0.47 rg 412 382.5 Td (2026) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 365.5 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 365.5 Td (Built a Python, Selenium and PyTest framework using Page Object Model for login, product search, cart,) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 353.3 Td (quantity and checkout journeys.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 339.1 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 339.1 Td (Implemented REST API contract, negative and data-driven tests for products and orders; 20/20 automated) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 326.9 Td (scenarios pass in CI.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 312.7 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 312.7 Td (Added GitHub Actions, HTML reports, failure screenshots, Postman checks and a public live results) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 300.5 Td (dashboard.) Tj ET
-BT /F1 8.3 Tf 0.12 0.43 0.72 rg 63 286.3 Td (Live: hugomanuelpaulo.github.io/qa-automation/) Tj ET
-BT /F2 11 Tf 0.09 0.14 0.22 rg 45 262.3 Td (QualityPulse - QA Intelligence Platform) Tj ET
-BT /F1 8.8 Tf 0.35 0.40 0.47 rg 412 262.3 Td (2026) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 245.3 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 245.3 Td (Automated controlled e-commerce UI and REST API checks with Playwright and TypeScript; publishes live) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 233.1 Td (execution evidence through CI/CD.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 218.9 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 218.9 Td (Demonstrates 12/12 passing scenarios across two testing layers with a public dashboard and report.) Tj ET
-BT /F1 8.3 Tf 0.12 0.43 0.72 rg 63 204.7 Td (Live: hugomanuelpaulo.github.io/qualitypulse/) Tj ET
-BT /F2 11 Tf 0.09 0.14 0.22 rg 45 180.7 Td (Revenue Guard - Executive Retention Analytics) Tj ET
-BT /F1 8.8 Tf 0.35 0.40 0.47 rg 412 180.7 Td (2026) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 163.7 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 163.7 Td (Developed an executive dashboard from 24 months of revenue data using PostgreSQL, Supabase, controlled) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 151.5 Td (views and access rules.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 137.3 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 137.3 Td (Applied validation gates, churn and MRR KPIs, audit evidence and role-based data access; academic) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 125.1 Td (evaluation: 92%.) Tj ET
-BT /F1 8 Tf 0.42 0.47 0.53 rg 45 28 Td (Hugo Paulo | CV 2026 | Page 1 of 2) Tj ET
+BT /F2 24 Tf 46 800 Td (HUGO PAULO) Tj ET
+BT /F2 11 Tf 46 777 Td (QA AUTOMATION | AI QUALITY | BUSINESS ANALYTICS) Tj ET
+BT /F1 9 Tf 46 757 Td (Purmerend, Netherlands | Open to English-speaking teams) Tj ET
+BT /F1 8 Tf 46 741 Td (Portfolio: https://hugomanuelpaulo.github.io | GitHub: github.com/HugoManuelPaulo) Tj ET
+BT /F1 8 Tf 46 727 Td (LinkedIn: linkedin.com/in/hugomanuelpaulo) Tj ET
+BT /F2 12 Tf 46 702 Td (PROFILE) Tj ET
+BT /F1 9 Tf 46 684 Td (Quality professional and Software Engineering graduate combining 5+ years of quality and process) Tj ET
+BT /F1 9 Tf 46 670 Td (improvement with hands-on QA automation, API testing, AI assurance and business analytics.) Tj ET
+BT /F1 9 Tf 46 656 Td (Builds traceable controls, automated release evidence and dashboards that support decisions.) Tj ET
+BT /F2 12 Tf 46 631 Td (LANGUAGES) Tj ET
+BT /F2 9 Tf 46 613 Td (Portuguese: Native | English: Fluent | Dutch: A2 - Elementary working proficiency) Tj ET
+BT /F2 12 Tf 46 588 Td (CORE SKILLS) Tj ET
+BT /F1 9 Tf 46 570 Td (Testing: Playwright, Selenium, PyTest, Postman, REST APIs, test design, defect reporting) Tj ET
+BT /F1 9 Tf 46 556 Td (AI Quality: LLM evaluation, prompt-injection testing, PII controls, grounding, AI governance) Tj ET
+BT /F1 9 Tf 46 542 Td (Data: SQL, PostgreSQL, MySQL, Excel, KPI analysis, dashboards, data validation) Tj ET
+BT /F1 9 Tf 46 528 Td (Engineering: Python, FastAPI, TypeScript, JavaScript, PHP, GitHub Actions, Docker, CI/CD) Tj ET
+BT /F2 12 Tf 46 503 Td (SELECTED TECHNICAL PROJECTS) Tj ET
+BT /F2 10 Tf 46 483 Td (AI Quality & Compliance Command Center | 2026) Tj ET
+BT /F1 8.5 Tf 46 468 Td (- Built a versioned 20-scenario evaluation harness and FastAPI service for AI release control.) Tj ET
+BT /F1 8.5 Tf 46 454 Td (- Tests grounding, prompt injection, PII leakage, transparency, human oversight and latency.) Tj ET
+BT /F1 8.5 Tf 46 440 Td (- Evidence: 18/20 passed, 0 critical/high findings, 2 medium findings, release gate PASS.) Tj ET
+BT /F1 8.5 Tf 46 426 Td (- Stack: Python, FastAPI, PyTest, GitHub Actions and Docker.) Tj ET
+BT /F1 8 Tf 46 412 Td (  github.com/HugoManuelPaulo/ai-quality-command-center) Tj ET
+BT /F2 10 Tf 46 389 Td (QualityPulse - Quality Intelligence Platform | 2026) Tj ET
+BT /F1 8.5 Tf 46 374 Td (- Automated browser UI and REST API testing with Playwright and TypeScript.) Tj ET
+BT /F1 8.5 Tf 46 360 Td (- Evidence: 12/12 scenarios passed; live dashboard and report published by CI/CD.) Tj ET
+BT /F1 8 Tf 46 346 Td (  hugomanuelpaulo.github.io/qualitypulse/) Tj ET
+BT /F2 10 Tf 46 323 Td (QA Automation Portfolio | 2026) Tj ET
+BT /F1 8.5 Tf 46 308 Td (- E-commerce framework covering login, search, cart, checkout and APIs.) Tj ET
+BT /F1 8.5 Tf 46 294 Td (- Evidence: 20/20 scenarios passed with screenshots, reports and GitHub Actions.) Tj ET
+BT /F1 8 Tf 46 280 Td (  github.com/HugoManuelPaulo/qa-automation-portfolio) Tj ET
+BT /F2 10 Tf 46 257 Td (Revenue Guard - Customer Retention Analytics | 2026) Tj ET
+BT /F1 8.5 Tf 46 242 Td (- Modeled 24 months across 7 portfolios using controlled SQL views and access rules.) Tj ET
+BT /F1 8.5 Tf 46 228 Td (- Delivered executive retention metrics with validation and traceability evidence.) Tj ET
+BT /F1 8 Tf 46 55 Td (Hugo Paulo | CV | Page 1 of 2) Tj ET
 endstream
 endobj
 5 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 5545 >>
+<< /Length 3119 >>
 stream
-0.06 0.27 0.49 rg 0 810 595 32 re f
-BT /F2 17 Tf 0.06 0.16 0.28 rg 45 778 Td (HUGO PAULO) Tj ET
-BT /F1 9 Tf 0.27 0.33 0.41 rg 406 779 Td (Professional Experience) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 748 Td (PROFESSIONAL EXPERIENCE) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 741 m 550 741 l S
-BT /F2 10.7 Tf 0.09 0.14 0.22 rg 45 721 Td (Warehouse Supervisor | A2Global Electronics) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 420 721 Td (Sep 2025 - Present) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 704 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 704 Td (Coordinate daily warehouse operations, priorities and team activities in an international electronics) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 691.8 Td (environment.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 677.6 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 677.6 Td (Maintain traceability, manage discrepancies and support continuous process improvement and reliable) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 665.4 Td (order flow.) Tj ET
-BT /F2 10.7 Tf 0.09 0.14 0.22 rg 45 641.2 Td (Quality Control Inspector | A2Global Electronics) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 420 641.2 Td (Apr 2022 - Aug 2025) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 624.2 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 624.2 Td (Performed product and process inspections, maintained quality documentation and handled) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 612 Td (non-conformities.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 597.8 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 597.8 Td (Applied evidence-based controls, defect escalation and traceability procedures to protect output) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 585.6 Td (quality.) Tj ET
-BT /F2 10.7 Tf 0.09 0.14 0.22 rg 45 561.4 Td (Warehouse Operator | Nissan Motor Corporation) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 420 561.4 Td (May 2019 - Apr 2022) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 544.4 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 544.4 Td (Handled orders and inventory in a high-volume logistics environment while supporting accuracy and) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 532.2 Td (continuous improvement.) Tj ET
-BT /F2 10.7 Tf 0.09 0.14 0.22 rg 45 508 Td (Data Centre QA / Server Hardware Tester | Material in Motion) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 420 508 Td (Oct 2017 - May 2019) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 491 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 491 Td (Tested server hardware for the Google programme using controlled technical procedures and acceptance) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 478.8 Td (criteria.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 464.6 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 464.6 Td (Documented results, verified component traceability and escalated detected hardware defects.) Tj ET
-BT /F2 10.7 Tf 0.09 0.14 0.22 rg 45 440.4 Td (Production Lines Manager / Team Leader | Kaffa Cafes) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 420 440.4 Td (Jul 2015 - Aug 2017) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 423.4 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 423.4 Td (Led production-line staff and coordinated quality standards, scheduling, training and process) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 411.2 Td (efficiency.) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 387 Td (EDUCATION) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 380.00000000000017 m 550 380.00000000000017 l S
-BT /F2 10.5 Tf 0.09 0.14 0.22 rg 45 360 Td (MBA - Artificial Intelligence & Business Analytics) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 430 360 Td (Completed Sep 2026) Tj ET
-BT /F1 9.1 Tf 0.09 0.14 0.22 rg 45 345 Td (UNIGRAN | Analytics, automation, AI governance and measurable business controls) Tj ET
-BT /F2 10.5 Tf 0.09 0.14 0.22 rg 45 321 Td (B.Sc. - Software Engineering) Tj ET
-BT /F1 8.6 Tf 0.35 0.40 0.47 rg 492 321 Td (2025) Tj ET
-BT /F1 9.1 Tf 0.09 0.14 0.22 rg 45 306 Td (UNIGRAN | Web development, Android, databases, testing and software quality) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 280 Td (ADDITIONAL PROJECTS & TRAINING) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 273.00000000000017 m 550 273.00000000000017 l S
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 253 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 253 Td (Aurora Distribuidora data audit: validated 494 accounting records, removed 33 duplicates, blocked 59) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 240.8 Td (exceptions and produced 402 auditable entries.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 226.6 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 226.6 Td (Dental Clinic Management System: full-stack project with PHP/PHPUnit tests and a System Usability) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 214.4 Td (Scale result of 78/100.) Tj ET
-BT /F2 9.2 Tf 0.12 0.43 0.72 rg 50 200.2 Td (-) Tj ET
-BT /F1 9.2 Tf 0.16 0.20 0.27 rg 63 200.2 Td (Quality Audits - Instructions and Key Details certificate \(2026\); Kotlin bootcamp \(2024\).) Tj ET
-BT /F2 12 Tf 0.12 0.43 0.72 rg 45 180 Td (WORK PREFERENCES) Tj ET
-0.58 0.70 0.82 RG 0.8 w 45 173.00000000000017 m 550 173.00000000000017 l S
-BT /F1 9.4 Tf 0.09 0.14 0.22 rg 45 153 Td (Open to QA Automation, Test Engineer, Data/Business Analyst and Process Automation roles in) Tj ET
-BT /F1 9.4 Tf 0.09 0.14 0.22 rg 45 140 Td (English-speaking international teams. Based in Purmerend and available for hybrid or remote) Tj ET
-BT /F1 9.4 Tf 0.09 0.14 0.22 rg 45 127 Td (opportunities.) Tj ET
-0.78 0.83 0.89 RG 0.7 w 45 54 m 550 54 l S
-BT /F2 9 Tf 0.12 0.43 0.72 rg 45 37 Td (Portfolio: hugomanuelpaulo.github.io) Tj ET
-BT /F1 8 Tf 0.42 0.47 0.53 rg 430 37 Td (Page 2 of 2) Tj ET
+BT /F2 16 Tf 46 800 Td (HUGO PAULO | PROFESSIONAL EXPERIENCE) Tj ET
+BT /F2 10 Tf 46 770 Td (Warehouse Supervisor | A2Global Electronics | Sep 2025 - Present) Tj ET
+BT /F1 8.7 Tf 46 754 Td (- Coordinate operations, traceability, discrepancy handling and process improvement.) Tj ET
+BT /F1 8.7 Tf 46 740 Td (- Support reliable execution in an international electronics environment.) Tj ET
+BT /F2 10 Tf 46 713 Td (Quality Control Inspector | A2Global Electronics | Apr 2022 - Aug 2025) Tj ET
+BT /F1 8.7 Tf 46 697 Td (- Inspected products and processes, maintained quality records and handled non-conformities.) Tj ET
+BT /F1 8.7 Tf 46 683 Td (- Used documented evidence and root-cause thinking to protect quality standards.) Tj ET
+BT /F2 10 Tf 46 656 Td (Warehouse Operator | Nissan Motor Corporation | May 2019 - Apr 2022) Tj ET
+BT /F1 8.7 Tf 46 640 Td (- Maintained order and inventory accuracy in a high-volume logistics operation.) Tj ET
+BT /F1 8.7 Tf 46 626 Td (- Contributed to continuous-improvement activities and controlled material flows.) Tj ET
+BT /F2 10 Tf 46 599 Td (Data Centre QA / Server Hardware Tester | Material in Motion | Oct 2017 - May 2019) Tj ET
+BT /F1 8.7 Tf 46 583 Td (- Tested server hardware for the Google programme under controlled procedures.) Tj ET
+BT /F1 8.7 Tf 46 569 Td (- Documented results, verified traceability and escalated technical defects.) Tj ET
+BT /F2 10 Tf 46 542 Td (Production Lines Manager / Team Leader | Kaffa Cafes | Jul 2015 - Aug 2017) Tj ET
+BT /F1 8.7 Tf 46 526 Td (- Led production staff, scheduling and training while maintaining quality standards.) Tj ET
+BT /F1 8.7 Tf 46 512 Td (- Improved workflow coordination and operational efficiency.) Tj ET
+BT /F2 12 Tf 46 478 Td (EDUCATION) Tj ET
+BT /F2 10 Tf 46 458 Td (MBA - Artificial Intelligence & Business Analytics | Completed Sep 2026) Tj ET
+BT /F1 8.7 Tf 46 443 Td (Applied focus: analytics, automation, AI governance and measurable business controls.) Tj ET
+BT /F2 10 Tf 46 416 Td (B.Sc. Software Engineering | UNIGRAN | 2025) Tj ET
+BT /F1 8.7 Tf 46 401 Td (Projects in web development, Android, databases, testing and software quality.) Tj ET
+BT /F2 12 Tf 46 367 Td (ADDITIONAL PROJECTS) Tj ET
+BT /F2 10 Tf 46 347 Td (Aurora Accounts Payable | Process Automation | 2026) Tj ET
+BT /F1 8.7 Tf 46 332 Td (Validated 494 accounting records, flagged exceptions and retained auditable evidence.) Tj ET
+BT /F2 10 Tf 46 305 Td (Dental Appointment Management | Full-stack Web | 2025) Tj ET
+BT /F1 8.7 Tf 46 290 Td (Role-based PHP/MySQL application for records, scheduling, procedures and reminders.) Tj ET
+BT /F2 10 Tf 46 263 Td (BMI Calculator | Native Android | 2024) Tj ET
+BT /F1 8.7 Tf 46 248 Td (Kotlin application with XML layouts, validation and multi-activity result flow.) Tj ET
+BT /F2 12 Tf 46 214 Td (WORKING STYLE) Tj ET
+BT /F1 9 Tf 46 194 Td (Evidence-driven | Quality-focused | Structured problem solving | Continuous improvement) Tj ET
+BT /F1 9 Tf 46 180 Td (Cross-functional communication | Operational ownership | International environment) Tj ET
+BT /F1 8 Tf 46 55 Td (Hugo Paulo | CV | Page 2 of 2) Tj ET
 endstream
 endobj
 7 0 obj
@@ -156,22 +96,22 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 9 0 obj
-<< /Title (Hugo Paulo - QA Automation CV) /Author (Hugo Paulo) /Subject (QA Automation, Software Quality and Data Analytics) /Creator (Hugo Paulo Portfolio) >>
+<< /Title (Hugo Paulo CV) /Author (Hugo Paulo) /Subject (QA Automation, AI Quality and Business Analytics) >>
 endobj
 xref
 0 10
 0000000000 65535 f 
-0000000017 00000 n 
-0000000066 00000 n 
-0000000129 00000 n 
-0000000265 00000 n 
-0000005818 00000 n 
-0000005954 00000 n 
-0000011551 00000 n 
-0000011648 00000 n 
-0000011750 00000 n 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000263 00000 n 
+0000003582 00000 n 
+0000003718 00000 n 
+0000006889 00000 n 
+0000006986 00000 n 
+0000007088 00000 n 
 trailer
 << /Size 10 /Root 1 0 R /Info 9 0 R >>
 startxref
-11925
+7213
 %%EOF
