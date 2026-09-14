@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0b3b3c">
+  <title>Tandartspraktijk Dorpsstraat — Concept</title>
+  <meta name="description" content="Onafhankelijk redesignconcept voor Tandartspraktijk Dorpsstraat in Zwaag.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#123233;--deep:#0b3b3c;--teal:#0d7772;--mint:#dff5ed;--cream:#fbfaf6;--white:#fff;--muted:#607171;--line:#dce7e4;--coral:#f08b71;--shadow:0 18px 55px rgba(11,59,60,.12);--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}body.menu-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}.skip{position:fixed;left:12px;top:-60px;z-index:100;background:#fff;padding:10px 16px;border-radius:9px}.skip:focus{top:12px}
+    .concept{background:#082f30;color:#dff5ed;text-align:center;font-size:13px;padding:7px 16px;letter-spacing:.02em}.concept strong{color:#fff}
+    .urgent{background:var(--mint);font-size:14px}.urgent .container{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0}.urgent strong{color:var(--deep)}.urgent a{font-weight:700;color:var(--teal)}
+    header{position:sticky;top:0;z-index:30;background:rgba(251,250,246,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(220,231,228,.8)}nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;line-height:1.05}.brand-mark{width:43px;height:43px;display:grid;place-items:center;background:var(--deep);border-radius:14px;color:#fff}.brand small{display:block;color:var(--teal);font:600 11px "DM Sans";text-transform:uppercase;letter-spacing:.13em;margin-top:4px}
+    .navlinks{display:flex;align-items:center;gap:28px;font-weight:600;font-size:15px}.navlinks a:not(.btn):hover{color:var(--teal)}.nav-actions{display:flex;align-items:center;gap:10px}.lang{border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:12px;cursor:pointer;color:var(--deep);font-weight:700}.menu{display:none;border:0;background:transparent;padding:8px;cursor:pointer}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:14px;background:var(--deep);color:#fff!important;font-weight:700;border:1px solid var(--deep);transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,59,60,.18)}.btn.light{background:#fff;color:var(--deep)!important;border-color:#fff}.btn.outline{background:transparent;color:var(--deep)!important;border-color:#b7ceca}
+    .hero{padding:76px 0 90px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:9px;background:var(--mint);color:var(--teal);padding:7px 12px;border-radius:999px;font-weight:700;font-size:13px}.eyebrow:before{content:"";width:8px;height:8px;background:var(--coral);border-radius:50%}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.08;margin:0}h1{font-size:clamp(45px,6vw,76px);letter-spacing:-.055em;margin:22px 0 24px}h1 span{color:var(--teal)}.lead{font-size:19px;color:var(--muted);max-width:610px;margin:0 0 31px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;gap:25px;margin-top:36px;color:var(--muted);font-size:14px}.trust div{display:flex;align-items:center;gap:8px}.check{width:21px;height:21px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-weight:800}
+    .visual{position:relative;min-height:530px}.photo{position:absolute;inset:0 0 30px 30px;border-radius:42px;overflow:hidden;background:#cce5df;box-shadow:var(--shadow)}.photo img{width:100%;height:100%;object-fit:cover}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(8,47,48,.48))}
+    .float-card{position:absolute;background:#fff;border-radius:18px;padding:17px 19px;box-shadow:0 16px 45px rgba(11,59,60,.18);z-index:2}.float-card.top{right:-25px;top:38px}.float-card.bottom{left:0;bottom:0}.float-card strong{display:block;font:800 17px Manrope}.float-card span{font-size:13px;color:var(--muted)}.float-icon{width:37px;height:37px;background:var(--mint);border-radius:11px;display:grid;place-items:center;color:var(--teal);margin-bottom:9px}.dots{position:absolute;width:150px;height:150px;right:-60px;bottom:0;background-image:radial-gradient(#7dbab2 2px,transparent 2px);background-size:17px 17px;opacity:.45}
+    section{padding:92px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}.section-head h2{font-size:clamp(34px,4.5vw,53px);letter-spacing:-.045em;max-width:650px}.section-head p{color:var(--muted);max-width:440px;margin:0}
+    .services{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;border:1px solid var(--line);border-radius:22px;background:#fff;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#a9cec8;box-shadow:0 18px 40px rgba(11,59,60,.08)}.icon{width:50px;height:50px;border-radius:15px;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-size:23px;margin-bottom:24px}.card h3{font-size:20px;margin-bottom:10px}.card p{margin:0;color:var(--muted);font-size:15px}.card .more{display:inline-block;color:var(--teal);font-weight:700;font-size:14px;margin-top:19px}
+    .comfort-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.comfort-photo{height:540px;border-radius:36px;overflow:hidden;position:relative}.comfort-photo img{width:100%;height:100%;object-fit:cover}.comfort-badge{position:absolute;left:24px;right:24px;bottom:24px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);padding:18px;border-radius:18px;display:flex;gap:13px;align-items:center}.comfort-copy h2{font-size:clamp(35px,4vw,52px);letter-spacing:-.045em;margin:18px 0 20px}.comfort-copy>p{color:var(--muted);font-size:18px}.benefits{display:grid;gap:14px;margin:28px 0 34px}.benefit{display:flex;gap:13px}.benefit strong{display:block}.benefit span{color:var(--muted);font-size:14px}
+    .team{background:var(--deep);color:#fff}.team .section-head p{color:#bdd0cd}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.person{background:#174849;border:1px solid rgba(255,255,255,.12);padding:24px;border-radius:22px}.avatar{height:190px;border-radius:17px;background:linear-gradient(145deg,#cde9e3,#7bb8ae);display:grid;place-items:center;color:var(--deep);font:800 52px Manrope;margin-bottom:19px;overflow:hidden}.person h3{font-size:18px}.person p{margin:5px 0 0;color:#b9cfcc;font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}.step{position:relative;padding:32px 28px;background:#fff;border-radius:22px;border:1px solid var(--line)}.step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--teal);font:800 15px Manrope;margin-bottom:38px}.step h3{font-size:21px;margin-bottom:10px}.step p{color:var(--muted);margin:0}
+    .contact{padding-top:25px}.contact-box{background:var(--mint);border-radius:36px;padding:55px;display:grid;grid-template-columns:.9fr 1.1fr;gap:55px}.contact h2{font-size:clamp(35px,4vw,51px);letter-spacing:-.045em}.contact-copy>p{color:var(--muted);font-size:17px}.contact-list{display:grid;gap:15px;margin-top:30px}.contact-item{display:flex;gap:13px;align-items:flex-start}.contact-item b{display:block}.contact-item span{color:var(--muted);font-size:14px}.form{background:#fff;border-radius:25px;padding:28px;box-shadow:var(--shadow)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-weight:700;font-size:13px}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 13px;color:var(--ink);background:#fbfdfc;outline:none}.field input:focus,.field textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,119,114,.1)}.field textarea{min-height:94px;resize:vertical}.privacy{font-size:11px;color:var(--muted);margin:11px 0 0}
+    footer{margin-top:90px;background:#082f30;color:#d7e5e2;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}.footer-title{font:700 14px Manrope;color:#fff;margin-bottom:15px}.footer-links{display:grid;gap:8px;font-size:14px;color:#adc5c1}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#91ada9}.concept-note{color:#ffd7cc}
+    .toast{position:fixed;right:20px;bottom:20px;z-index:100;background:#082f30;color:#fff;padding:15px 19px;border-radius:14px;box-shadow:var(--shadow);transform:translateY(120px);opacity:0;transition:.3s}.toast.show{transform:none;opacity:1}
+    @media(max-width:950px){.navlinks{position:fixed;inset:126px 0 auto;background:var(--cream);padding:28px 20px 35px;display:none;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.menu{display:block}.navlinks.open{display:flex}.nav-actions .btn{display:none}.hero-grid,.comfort-grid,.contact-box{grid-template-columns:1fr}.hero{padding-top:48px}.visual{min-height:470px}.cards{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.container{width:min(100% - 28px,1180px)}.urgent .container{align-items:flex-start;flex-direction:column;gap:2px}.urgent{font-size:12px}nav{height:68px}.brand{font-size:14px}.brand-mark{width:38px;height:38px}.hero{padding:38px 0 65px}h1{font-size:43px}.lead{font-size:17px}.trust{flex-direction:column;gap:9px;margin-top:26px}.visual{min-height:370px}.photo{left:0;border-radius:27px}.float-card.top{right:-7px;top:20px}.float-card.bottom{left:10px}.section-head{align-items:flex-start;flex-direction:column}.cards,.team-grid,.steps{grid-template-columns:1fr}section{padding:68px 0}.comfort-grid{gap:38px}.comfort-photo{height:390px}.contact-box{padding:28px 20px;border-radius:25px;gap:30px}.form-row{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.dots{display:none}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Direct naar inhoud</a>
+<div class="concept"><strong>Portfolio concept</strong> — dit is geen officiële website van de praktijk</div>
+<div class="urgent"><div class="container"><span><strong>Spoed?</strong> Tijdens openingstijden: 0229-241400 · Buiten openingstijden: 0900-8602</span><a href="tel:+31229241400">Bel de praktijk →</a></div></div>
+<header>
+  <nav class="container" aria-label="Hoofdnavigatie">
+    <a class="brand" href="#top" aria-label="Tandartspraktijk Dorpsstraat home">
+      <span class="brand-mark" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7.7 3.3c1.5-.4 2.8.7 4.3.7s2.8-1.1 4.3-.7c2.6.7 3.4 3.5 2.8 6-.7 2.9-2.4 3.9-2.9 7.5-.3 2.2-1.2 4.2-2.4 4.2-1.5 0-1.1-4.3-1.8-4.3S11.7 21 10.2 21C9 21 8.1 19 7.8 16.8c-.5-3.6-2.2-4.6-2.9-7.5-.6-2.5.2-5.3 2.8-6Z" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      <span>Tandartspraktijk<br>Dorpsstraat<small>Zwaag</small></span>
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#behandelingen" data-nl="Behandelingen" data-en="Treatments">Behandelingen</a>
+      <a href="#over" data-nl="Onze aanpak" data-en="Our approach">Onze aanpak</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang" id="lang" type="button" aria-label="Switch language">EN</button>
+      <a class="btn" href="#contact" data-nl="Afspraak aanvragen" data-en="Request appointment">Afspraak aanvragen</a>
+      <button class="menu" id="menu" type="button" aria-controls="navlinks" aria-expanded="false" aria-label="Menu openen"><svg width="27" height="27" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow" data-nl="Vertrouwde tandheelkunde in Zwaag" data-en="Trusted dental care in Zwaag">Vertrouwde tandheelkunde in Zwaag</span>
+        <h1 data-nl="Persoonlijke zorg voor een <span>gezonde glimlach.</span>" data-en="Personal care for a <span>healthy smile.</span>">Persoonlijke zorg voor een <span>gezonde glimlach.</span></h1>
+        <p class="lead" data-nl="Van preventieve controle tot gespecialiseerde behandeling. Ons team neemt de tijd, luistert en zorgt dat u zich op uw gemak voelt." data-en="From preventive check-ups to specialised treatment. Our team takes time, listens and helps you feel at ease.">Van preventieve controle tot gespecialiseerde behandeling. Ons team neemt de tijd, luistert en zorgt dat u zich op uw gemak voelt.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact" data-nl="Plan uw bezoek" data-en="Plan your visit">Plan uw bezoek</a>
+          <a class="btn outline" href="tel:+31229241400">0229-241400</a>
+        </div>
+        <div class="trust">
+          <div><span class="check">✓</span><span data-nl="Aandacht voor angst" data-en="Anxiety-aware care">Aandacht voor angst</span></div>
+          <div><span class="check">✓</span><span data-nl="Moderne technieken" data-en="Modern techniques">Moderne technieken</span></div>
+          <div><span class="check">✓</span><span data-nl="Persoonlijke uitleg" data-en="Clear explanations">Persoonlijke uitleg</span></div>
+        </div>
+      </div>
+      <div class="visual" aria-label="Tandheelkundige zorg">
+        <div class="dots"></div>
+        <div class="photo"><img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=82" alt="Tandarts tijdens een rustige controle"></div>
+        <div class="float-card top"><div class="float-icon">♡</div><strong data-nl="Zorg met aandacht" data-en="Care with attention">Zorg met aandacht</strong><span data-nl="Voor jong en oud" data-en="For every age">Voor jong en oud</span></div>
+        <div class="float-card bottom"><div class="float-icon">✓</div><strong data-nl="Duidelijk behandelplan" data-en="Clear treatment plan">Duidelijk behandelplan</strong><span data-nl="U weet vooraf waar u aan toe bent" data-en="Know what to expect in advance">U weet vooraf waar u aan toe bent</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="behandelingen">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow" data-nl="Onze behandelingen" data-en="Our treatments">Onze behandelingen</span><h2 data-nl="Alles voor uw mondgezondheid, onder één dak." data-en="Complete oral healthcare, under one roof.">Alles voor uw mondgezondheid, onder één dak.</h2></div><p data-nl="Preventief waar het kan, zorgvuldig behandelen waar het nodig is — altijd met heldere uitleg." data-en="Prevention where possible, careful treatment where needed — always with clear explanations.">Preventief waar het kan, zorgvuldig behandelen waar het nodig is — altijd met heldere uitleg.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">◉</div><h3 data-nl="Controle & preventie" data-en="Check-ups & prevention">Controle & preventie</h3><p data-nl="Periodieke controles, professionele gebitsreiniging en digitale beeldvorming." data-en="Regular check-ups, professional cleaning and digital imaging.">Periodieke controles, professionele gebitsreiniging en digitale beeldvorming.</p><span class="more" data-nl="Meer informatie →" data-en="Learn more →">Meer informatie →</span></article>
+        <article class="card"><div class="icon">◇</div><h3 data-nl="Kronen & bruggen" data-en="Crowns & bridges">Kronen & bruggen</h3><p data-nl="Duurzame oplossingen op maat voor herstel van functie en uitstraling." data-en="Durable, custom solutions to restore function and appearance.">Duurzame oplossingen op maat voor herstel van functie en uitstraling.</p><span class="more" data-nl="Meer informatie →" data-en="Learn more →">Meer informatie →</span></article>
+        <article class="card"><div class="icon">✦</div><h3 data-nl="Cosmetische tandheelkunde" data-en="Cosmetic dentistry">Cosmetische tandheelkunde</h3><p data-nl="Professioneel bleken, facings en AirSmile voor een natuurlijke uitstraling." data-en="Professional whitening, veneers and AirSmile for a natural result.">Professioneel bleken, facings en AirSmile voor een natuurlijke uitstraling.</p><span class="more" data-nl="Meer informatie →" data-en="Learn more →">Meer informatie →</span></article>
+        <article class="card"><div class="icon">＋</div><h3 data-nl="Implantaten" data-en="Dental implants">Implantaten</h3><p data-nl="Een veilige, moderne vervanging die natuurlijk oogt en vertrouwd aanvoelt." data-en="A safe, modern replacement designed to look and feel natural.">Een veilige, moderne vervanging die natuurlijk oogt en vertrouwd aanvoelt.</p><span class="more" data-nl="Meer informatie →" data-en="Learn more →">Meer informatie →</span></article>
+        <article class="card"><div class="icon">⌁</div><h3 data-nl="Orthodontie" data-en="Orthodontics">Orthodontie</h3><p data-nl="Beugels en aligners voor kinderen en volwassenen, passend bij uw situatie." data-en="Braces and aligners for children and adults, tailored to your needs.">Beugels en aligners voor kinderen en volwassenen, passend bij uw situatie.</p><span class="more" data-nl="Meer informatie →" data-en="Learn more →">Meer informatie →</span></article>
+        <article class="card"><div class="icon">◎</div><h3 data-nl="Wortelkanaalbehandeling" data-en="Root canal treatment">Wortelkanaalbehandeling</h3><p data-nl="Pijn verlichten en uw natuurlijke tand behouden met nauwkeurige behandeling." data-en="Relieve pain and preserve your natural tooth with precise treatment.">Pijn verlichten en uw natuurlijke tand behouden met nauwkeurige behandeling.</p><span class="more" data-nl="Meer informatie →" data-en="Learn more →">Meer informatie →</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="over">
+    <div class="container comfort-grid">
+      <div class="comfort-photo"><img src="https://images.unsplash.com/photo-1606265752439-1f18756aa376?auto=format&fit=crop&w=1000&q=82" alt="Moderne en rustige behandelkamer"><div class="comfort-badge"><span class="brand-mark">♡</span><div><strong data-nl="Ook als u gespannen bent" data-en="Even if you feel anxious">Ook als u gespannen bent</strong><div data-nl="Vertel het ons — wij passen het tempo aan." data-en="Tell us — we will adjust the pace.">Vertel het ons — wij passen het tempo aan.</div></div></div></div>
+      <div class="comfort-copy"><span class="eyebrow" data-nl="Rust, duidelijkheid, vertrouwen" data-en="Calm, clarity, trust">Rust, duidelijkheid, vertrouwen</span><h2 data-nl="Een bezoek waarbij u zich gehoord voelt." data-en="A visit where you feel heard.">Een bezoek waarbij u zich gehoord voelt.</h2><p data-nl="Goede mondzorg begint met luisteren. We bespreken uw wensen, leggen iedere stap uit en maken samen een behandelplan dat bij u past." data-en="Good oral care starts with listening. We discuss your wishes, explain every step and create a treatment plan that fits you.">Goede mondzorg begint met luisteren. We bespreken uw wensen, leggen iedere stap uit en maken samen een behandelplan dat bij u past.</p>
+        <div class="benefits">
+          <div class="benefit"><span class="check">✓</span><div><strong data-nl="Persoonlijke benadering" data-en="Personal approach">Persoonlijke benadering</strong><span data-nl="Ruimte voor vragen, wensen en zorgen." data-en="Time for questions, wishes and concerns.">Ruimte voor vragen, wensen en zorgen.</span></div></div>
+          <div class="benefit"><span class="check">✓</span><div><strong data-nl="Transparante uitleg" data-en="Transparent information">Transparante uitleg</strong><span data-nl="Inzicht in behandeling, alternatieven en kosten." data-en="Clarity about treatment, alternatives and costs.">Inzicht in behandeling, alternatieven en kosten.</span></div></div>
+          <div class="benefit"><span class="check">✓</span><div><strong data-nl="Zorgvuldig tempo" data-en="A comfortable pace">Zorgvuldig tempo</strong><span data-nl="Extra aandacht wanneer u bang of gespannen bent." data-en="Extra attention when you feel anxious or tense.">Extra aandacht wanneer u bang of gespannen bent.</span></div></div>
+        </div>
+        <a class="btn" href="#contact" data-nl="Maak kennis met de praktijk" data-en="Meet the practice">Maak kennis met de praktijk</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow" data-nl="Ons team" data-en="Our team">Ons team</span><h2 data-nl="Professionals met aandacht voor de mens." data-en="Professionals who care about people.">Professionals met aandacht voor de mens.</h2></div><p data-nl="Een vertrouwd team voor preventie, algemene tandheelkunde en mondhygiëne." data-en="A trusted team for prevention, general dentistry and dental hygiene.">Een vertrouwd team voor preventie, algemene tandheelkunde en mondhygiëne.</p></div>
+      <div class="team-grid">
+        <article class="person"><div class="avatar">TB</div><h3>T. Bajory</h3><p data-nl="Tandarts" data-en="Dentist">Tandarts</p></article>
+        <article class="person"><div class="avatar">SM</div><h3>S. Mahealiah</h3><p data-nl="Tandarts" data-en="Dentist">Tandarts</p></article>
+        <article class="person"><div class="avatar">DV</div><h3>D. Visser-van der Meiden</h3><p data-nl="Mondhygiënist" data-en="Dental hygienist">Mondhygiënist</p></article>
+        <article class="person"><div class="avatar">LH</div><h3>L. Hubeek</h3><p data-nl="Mondhygiënist" data-en="Dental hygienist">Mondhygiënist</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow" data-nl="Nieuwe patiënt" data-en="New patient">Nieuwe patiënt</span><h2 data-nl="In drie heldere stappen." data-en="Three simple steps.">In drie heldere stappen.</h2></div><p data-nl="Neem contact op met de praktijk om de actuele inschrijfmogelijkheden te bespreken." data-en="Contact the practice to discuss current registration options.">Neem contact op met de praktijk om de actuele inschrijfmogelijkheden te bespreken.</p></div>
+      <div class="steps">
+        <article class="step"><h3 data-nl="Neem contact op" data-en="Get in touch">Neem contact op</h3><p data-nl="Bel of stuur een bericht met uw contactgegevens. Deel geen medische informatie via dit formulier." data-en="Call or send your contact details. Do not share medical information through this form.">Bel of stuur een bericht met uw contactgegevens. Deel geen medische informatie via dit formulier.</p></article>
+        <article class="step"><h3 data-nl="Kennismaking" data-en="Introduction">Kennismaking</h3><p data-nl="Tijdens het eerste bezoek bespreken we uw mondgezondheid, wensen en eventuele zorgen." data-en="During your first visit we discuss your oral health, wishes and any concerns.">Tijdens het eerste bezoek bespreken we uw mondgezondheid, wensen en eventuele zorgen.</p></article>
+        <article class="step"><h3 data-nl="Persoonlijk plan" data-en="Personal plan">Persoonlijk plan</h3><p data-nl="U ontvangt duidelijke uitleg en, wanneer nodig, een passend behandelvoorstel." data-en="You receive clear information and, when needed, a suitable treatment proposal.">U ontvangt duidelijke uitleg en, wanneer nodig, een passend behandelvoorstel.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-box">
+      <div class="contact-copy"><span class="eyebrow" data-nl="Contact & route" data-en="Contact & directions">Contact & route</span><h2 data-nl="We helpen u graag verder." data-en="We are happy to help.">We helpen u graag verder.</h2><p data-nl="Voor een afspraak of vraag kunt u de praktijk bellen. Het formulier in dit concept is alleen een demonstratie." data-en="For an appointment or question, please call the practice. The form in this concept is for demonstration only.">Voor een afspraak of vraag kunt u de praktijk bellen. Het formulier in dit concept is alleen een demonstratie.</p>
+        <div class="contact-list">
+          <div class="contact-item"><span class="check">⌂</span><div><b>Dorpsstraat 275</b><span>1689 GE Zwaag</span></div></div>
+          <div class="contact-item"><span class="check">☎</span><div><b><a href="tel:+31229241400">0229-241400</a></b><span data-nl="Maandag t/m donderdag telefonisch bereikbaar" data-en="Available by phone Monday through Thursday">Maandag t/m donderdag telefonisch bereikbaar</span></div></div>
+          <div class="contact-item"><span class="check">✉</span><div><b><a href="mailto:info@tandartspraktijkdorpsstraat.nl">info@tandartspraktijkdorpsstraat.nl</a></b><span data-nl="Voor algemene vragen, geen medische gegevens" data-en="For general questions, no medical information">Voor algemene vragen, geen medische gegevens</span></div></div>
+          <div class="contact-item"><span class="check">◷</span><div><b data-nl="Openingstijden" data-en="Opening hours">Openingstijden</b><span>Ma–Do 08:15–12:15 / 13:15–16:45<br>Vr 08:15–12:15 / 13:15–16:45</span></div></div>
+        </div>
+      </div>
+      <form class="form" id="demo-form">
+        <div class="form-row"><div class="field"><label for="name" data-nl="Naam" data-en="Name">Naam</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="phone" data-nl="Telefoon" data-en="Phone">Telefoon</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel"></div></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="message" data-nl="Algemene vraag" data-en="General question">Algemene vraag</label><textarea id="message" name="message" required></textarea></div>
+        <button class="btn" type="submit" data-nl="Bericht versturen" data-en="Send message">Bericht versturen</button>
+        <p class="privacy" data-nl="Demonstratieformulier — er worden geen gegevens verzonden of opgeslagen. Deel hier geen medische informatie." data-en="Demonstration form — no data is sent or stored. Do not share medical information here.">Demonstratieformulier — er worden geen gegevens verzonden of opgeslagen. Deel hier geen medische informatie.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="brand" href="#top"><span class="brand-mark">◇</span><span>Tandartspraktijk<br>Dorpsstraat<small>Zwaag</small></span></a><p style="max-width:390px;color:#adc5c1;font-size:14px" data-nl="Persoonlijke mondzorg met aandacht, duidelijke uitleg en moderne behandelmethoden." data-en="Personal dental care with attention, clear explanations and modern treatment methods.">Persoonlijke mondzorg met aandacht, duidelijke uitleg en moderne behandelmethoden.</p></div>
+      <div><div class="footer-title" data-nl="Praktijk" data-en="Practice">Praktijk</div><div class="footer-links"><a href="#behandelingen" data-nl="Behandelingen" data-en="Treatments">Behandelingen</a><a href="#over" data-nl="Onze aanpak" data-en="Our approach">Onze aanpak</a><a href="#team">Team</a><a href="#contact">Contact</a></div></div>
+      <div><div class="footer-title" data-nl="Direct contact" data-en="Direct contact">Direct contact</div><div class="footer-links"><a href="tel:+31229241400">0229-241400</a><a href="mailto:info@tandartspraktijkdorpsstraat.nl">info@tandartspraktijkdorpsstraat.nl</a><span>Dorpsstraat 275, Zwaag</span></div></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Tandartspraktijk Dorpsstraat — redesignconcept</span><span class="concept-note">Unofficial concept · Designed & developed by Hugo Paulo</span></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Demomodus: er zijn geen gegevens verzonden.</div>
+<script>
+  const menu=document.getElementById("menu"),nav=document.getElementById("navlinks");
+  menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));document.body.classList.toggle("menu-open",open)});
+  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");document.body.classList.remove("menu-open");menu.setAttribute("aria-expanded","false")}));
+  let current="nl";const lang=document.getElementById("lang");
+  lang.addEventListener("click",()=>{current=current==="nl"?"en":"nl";document.documentElement.lang=current;document.querySelectorAll("[data-nl][data-en]").forEach(el=>el.innerHTML=el.dataset[current]);lang.textContent=current==="nl"?"EN":"NL"});
+  document.getElementById("demo-form").addEventListener("submit",e=>{e.preventDefault();const toast=document.getElementById("toast");toast.textContent=current==="nl"?"Demomodus: er zijn geen gegevens verzonden.":"Demo mode: no data has been sent.";toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),3500);e.target.reset()});
+  document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
