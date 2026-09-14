@@ -33,7 +33,7 @@ BT /F2 10 Tf 46 483 Td (AI Quality & Compliance Command Center | 2026) Tj ET
 BT /F1 8.5 Tf 46 468 Td (- Built a versioned 20-scenario evaluation harness and FastAPI service for AI release control.) Tj ET
 BT /F1 8.5 Tf 46 454 Td (- Tests grounding, prompt injection, PII leakage, transparency, human oversight and latency.) Tj ET
 BT /F1 8.5 Tf 46 440 Td (- Evidence: 18/20 passed, 0 critical/high findings, 2 medium findings, release gate PASS.) Tj ET
-BT /F1 8.5 Tf 46 426 Td (- Stack: Python, FastAPI, PyTest, GitHub Actions and Docker.) Tj ET
+BT /F1 8.5 Tf 46 426 Td (- Built Python AI Red Team Arena with 12 scored challenges. ) Tj ET
 BT /F1 8 Tf 46 412 Td (  github.com/HugoManuelPaulo/ai-quality-command-center) Tj ET
 BT /F2 10 Tf 46 389 Td (QualityPulse - Quality Intelligence Platform | 2026) Tj ET
 BT /F1 8.5 Tf 46 374 Td (- Automated browser UI and REST API testing with Playwright and TypeScript.) Tj ET
