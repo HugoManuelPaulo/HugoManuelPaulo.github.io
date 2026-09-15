@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hugo Paulo — QA Automation, Business Analytics, AI and Process Automation portfolio.">
+  <meta name="description" content="Hugo Paulo — QA Automation Engineer with a background in quality operations and data analysis.">
   <meta name="theme-color" content="#07111f">
   <link rel="canonical" href="https://hugomanuelpaulo.github.io/">
-  <title>Hugo Paulo — QA Automation & Business Analytics</title>
+  <title>Hugo Paulo — QA Automation Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -179,6 +179,41 @@
     .project-visual img { width: 100%; border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 18px 50px rgba(0,0,0,.3); }
     .project-visual span { color: var(--muted); font-size: .82rem; }
 
+    .project-media {
+      display: grid;
+      grid-template-columns: 1fr 132px;
+      gap: 12px;
+      align-items: center;
+    }
+    .project-media .web-preview {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 50px rgba(0,0,0,.3);
+    }
+    .project-media .mobile-preview {
+      width: 132px;
+      height: 220px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 50px rgba(0,0,0,.38);
+    }
+    .project-note { margin-top: 14px !important; font-size: .88rem; }
+
+    .labs { margin-top: 28px; }
+    .labs-title { margin: 0 0 14px; color: var(--muted); font-size: .86rem; letter-spacing: .08em; text-transform: uppercase; }
+    .lab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .lab-card { padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: rgba(13, 26, 42, .75); }
+    .lab-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+    .lab-card p { margin: 0 0 16px; color: var(--muted); }
+    .lab-card .phone-stack { min-height: 0; margin-top: 20px; }
+    .lab-card .phone-stack img { width: 92px; }
+
     .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .skill-card { padding: 28px; border-top: 2px solid var(--blue); background: rgba(13, 26, 42, .84); }
     .skill-card h3 { font-size: 1.2rem; margin-bottom: 16px; }
@@ -265,6 +300,9 @@
       .field.full { grid-column: auto; }
       .proof.wide { grid-column: auto; }
       .contact { padding: 38px 22px; }
+      .project-media { grid-template-columns: 1fr 92px; }
+      .project-media .mobile-preview { width: 92px; height: 154px; border-radius: 14px; }
+      .lab-grid { grid-template-columns: 1fr; }
       footer .wrap { flex-direction: column; }
     }
 
@@ -294,7 +332,7 @@
       <div class="hero-copy">
         <p class="eyebrow mono">Quality mindset. Technical execution.</p>
         <h1>Hugo Paulo<span>.</span></h1>
-        <p>QA Automation, Business Analytics and AI-driven process improvement — backed by hands-on experience in quality control, traceability and operational leadership.</p>
+        <p>QA Automation Engineer with a background in quality operations and data analysis. I build browser, API and AI-assurance tests that make failures visible and releases easier to trust.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">Explore selected work ↓</a>
           <a class="button" href="Hugo_Paulo_CV.pdf" download>Download CV ↓</a>
@@ -314,36 +352,17 @@
         <div class="section-head">
           <p class="section-number mono">01 / SELECTED WORK</p>
           <div>
-            <h2>Evidence over claims.</h2>
-            <p class="section-intro">Projects that connect software engineering with measurable controls, reliable data and practical business decisions.</p>
+            <h2>Selected work.</h2>
+            <p class="section-intro">Practical projects built around testing, reliable data and problems I wanted to understand or improve.</p>
           </div>
         </div>
 
         <div class="projects">
           <article class="project">
             <div>
-              <div class="project-label mono">AI Assurance · 2026</div>
-              <h3>AI Quality &amp; Compliance Command Center</h3>
-              <p>A release-control platform for AI assistants that evaluates grounding, prompt-injection resistance, privacy, transparency, human oversight and performance. It includes a playable Red Team Arena with 12 realistic security decisions.</p>
-              <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PyTest</span><span class="tag">LLM Evaluation</span><span class="tag">AI Governance</span><span class="tag">GitHub Actions</span></div>
-              <div class="project-links">
-                <a class="button small" href="ai-quality-command-center/" target="_blank" rel="noreferrer">Live dashboard ↗</a>
-                <a class="button small" href="ai-quality-command-center/arena.html" target="_blank" rel="noreferrer">Play AI Arena ↗</a>
-                <a class="button small" href="https://github.com/HugoManuelPaulo/ai-quality-command-center" target="_blank" rel="noreferrer">View repository ↗</a>
-              </div>
-            </div>
-            <div class="project-proof" aria-label="AI Quality and Compliance project highlights">
-              <div class="proof"><strong>18/20</strong><span>AI evaluations passed</span></div>
-              <div class="proof"><strong>0</strong><span>Critical or high findings</span></div>
-              <div class="proof wide"><strong>PASS</strong><span>Automated release gate with two transparent medium findings.</span></div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div>
               <div class="project-label mono">QA Intelligence · 2026</div>
               <h3>QualityPulse</h3>
-              <p>A complete quality intelligence platform that tests a controlled e-commerce application across browser UI and REST API layers, then publishes live execution evidence through an automated CI/CD pipeline.</p>
+              <p>I built QualityPulse to connect automated tests with a dashboard that a non-tester can understand. It checks a controlled store through the browser and REST API, then publishes the latest results through GitHub Actions.</p>
               <div class="tags"><span class="tag">Playwright</span><span class="tag">TypeScript</span><span class="tag">REST API</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span></div>
               <div class="project-links">
                 <a class="button small" href="https://hugomanuelpaulo.github.io/qualitypulse/" target="_blank" rel="noreferrer">Live dashboard ↗</a>
@@ -354,52 +373,7 @@
             <div class="project-proof" aria-label="QualityPulse project highlights">
               <div class="proof"><strong>12/12</strong><span>Automated scenarios passed</span></div>
               <div class="proof"><strong>2 layers</strong><span>Browser UI and REST API</span></div>
-              <div class="proof wide"><strong>Live evidence</strong><span>Every push publishes the latest dashboard and Playwright report.</span></div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div>
-              <div class="project-label mono">QA Automation · 2026</div>
-              <h3>QA Automation Portfolio</h3>
-              <p>A portfolio-grade e-commerce test framework covering login, product search, cart, checkout and REST APIs. It applies the Page Object Model, data-driven negative testing, failure screenshots and automated CI reporting.</p>
-              <div class="tags"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">PyTest</span><span class="tag">REST API</span><span class="tag">Postman</span><span class="tag">GitHub Actions</span></div>
-              <div class="project-links"><a class="button small" href="qa-automation/" target="_blank" rel="noreferrer">Live dashboard ↗</a><a class="button small" href="qa-automation/demo/" target="_blank" rel="noreferrer">Try the demo ↗</a><a class="button small" href="https://github.com/HugoManuelPaulo/qa-automation-portfolio" target="_blank" rel="noreferrer">View repository ↗</a></div>
-            </div>
-            <div class="project-proof" aria-label="QA Automation project highlights">
-              <div class="proof"><strong>20/20</strong><span>Automated scenarios passed</span></div>
-              <div class="proof"><strong>2 layers</strong><span>Browser UI and REST API</span></div>
-              <div class="proof wide"><strong>CI evidence</strong><span>Automated execution with a downloadable HTML test report.</span></div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div>
-              <div class="project-label mono">Business Analytics · 2026</div>
-              <h3>Revenue Guard</h3>
-              <p>An executive customer-retention dashboard designed to show which account portfolio requires attention and why. The project combines controlled SQL views, authentication, access rules and validation evidence.</p>
-              <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RLS</span><span class="tag">Lovable</span></div>
-              <div class="project-links"><span class="button small" aria-label="Revenue Guard is a private academic repository">Private academic project</span></div>
-            </div>
-            <div class="project-proof" aria-label="Revenue Guard project highlights">
-              <div class="proof"><strong>7</strong><span>Account portfolios</span></div>
-              <div class="proof"><strong>24</strong><span>Monthly periods</span></div>
-              <div class="proof wide"><strong>Controlled metrics</strong><span>Business calculations remain in database views, not the frontend.</span></div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div>
-              <div class="project-label mono">Process Automation · 2026</div>
-              <h3>Aurora Accounts Payable</h3>
-              <p>An automation and control workflow for accounting records, built to validate data, flag exceptions and retain auditable evidence instead of relying on manual review.</p>
-              <div class="tags"><span class="tag">Google Sheets</span><span class="tag">Apps Script</span><span class="tag">Gemini</span><span class="tag">Data Validation</span><span class="tag">AI Governance</span></div>
-              <div class="project-links"><span class="button small" aria-label="Aurora is an academic case study">Academic case study</span></div>
-            </div>
-            <div class="project-proof" aria-label="Aurora project highlights">
-              <div class="proof"><strong>494</strong><span>Records processed</span></div>
-              <div class="proof"><strong>2 routes</strong><span>Alpha and Omega controls</span></div>
-              <div class="proof wide"><strong>Audit-ready</strong><span>Exceptions, decisions and controls designed for traceability.</span></div>
+              <div class="proof wide"><strong>CI report</strong><span>Each push rebuilds the dashboard and publishes the Playwright report.</span></div>
             </div>
           </article>
 
@@ -407,29 +381,80 @@
             <div>
               <div class="project-label mono">Full-stack Web + Mobile · 2025–2026</div>
               <h3>Dental Clinic Platform — Web &amp; Mobile</h3>
-              <p>Built to replace fragmented appointment handling with one role-based workflow for patients, dentists and reception staff. I developed the PHP/MySQL clinic system first, then redesigned the patient journey as a React Native and Expo app. The mobile interface is functional with demonstration data; secure API integration is the next stage.</p>
-              <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">PHP 8.2</span><span class="tag">MySQL</span><span class="tag">GitHub Actions</span></div>
+              <p>This project started as my Software Engineering graduation system: one workflow for patients, dentists and reception staff. After completing the PHP/MySQL web version, I redesigned the patient experience as a React Native app.</p>
+              <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">PHP 8.2</span><span class="tag">MySQL</span></div>
+              <p class="project-note"><strong>What I learned:</strong> translating the same appointment process from a role-based web system into a simpler mobile journey. The app currently uses demonstration data; secure API integration is the next stage.</p>
               <div class="project-links"><a class="button small" href="https://github.com/HugoManuelPaulo/clinica-oral-care" target="_blank" rel="noreferrer">View full project ↗</a><a class="button small" href="https://github.com/HugoManuelPaulo/clinica-oral-care/tree/main/mobile-app" target="_blank" rel="noreferrer">View mobile source ↗</a></div>
             </div>
-            <div class="project-visual" aria-label="OralCare web system preview">
-              <img src="https://raw.githubusercontent.com/HugoManuelPaulo/clinica-oral-care/main/img/tela_index.jpg.jpg" alt="OralCare dental clinic web system interface" loading="lazy">
-              <span class="mono">OralCare web system · Interface preview</span>
+            <div class="project-media" aria-label="OralCare web and mobile interface previews">
+              <img class="web-preview" src="assets/portfolio/oralcare-web.jpg" alt="OralCare dental clinic web system interface" loading="lazy">
+              <img class="mobile-preview" src="assets/portfolio/oralcare-mobile.jpg" alt="OralCare mobile app home screen" loading="lazy">
             </div>
           </article>
 
           <article class="project">
             <div>
-              <div class="project-label mono">Android · Kotlin · 2024</div>
-              <h3>BMI Calculator</h3>
-              <p>A native Android application that captures weight and height, calculates BMI and presents the result in a second activity. Built with Kotlin and XML layouts.</p>
-              <div class="tags"><span class="tag">Kotlin</span><span class="tag">Android Studio</span><span class="tag">XML</span><span class="tag">Gradle</span></div>
-              <div class="project-links"><a class="button small" href="https://github.com/HugoManuelPaulo/CalculadoraIMCandroidapp" target="_blank" rel="noreferrer">View repository ↗</a></div>
+              <div class="project-label mono">AI Assurance · 2026</div>
+              <h3>AI Quality &amp; Compliance Command Center</h3>
+              <p>I wanted to test AI assistants with repeatable checks instead of judging a few answers manually. The result evaluates grounding, prompt injection, privacy, transparency and human oversight, with a Red Team Arena for reviewing realistic decisions.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PyTest</span><span class="tag">LLM Evaluation</span><span class="tag">GitHub Actions</span></div>
+              <div class="project-links"><a class="button small" href="ai-quality-command-center/" target="_blank" rel="noreferrer">Live dashboard ↗</a><a class="button small" href="ai-quality-command-center/arena.html" target="_blank" rel="noreferrer">Play AI Arena ↗</a><a class="button small" href="https://github.com/HugoManuelPaulo/ai-quality-command-center" target="_blank" rel="noreferrer">View repository ↗</a></div>
             </div>
-            <div class="phone-stack" aria-label="BMI Calculator screenshots">
-              <img src="https://raw.githubusercontent.com/HugoManuelPaulo/CalculadoraIMCandroidapp/master/image1.png" alt="BMI Calculator input screen" loading="lazy">
-              <img src="https://raw.githubusercontent.com/HugoManuelPaulo/CalculadoraIMCandroidapp/master/image3.png" alt="BMI Calculator result screen" loading="lazy">
+            <div class="project-proof" aria-label="AI Quality and Compliance project highlights">
+              <div class="proof"><strong>20 checks</strong><span>Across quality, security and governance</span></div>
+              <div class="proof"><strong>2 findings</strong><span>Medium-risk issues kept visible</span></div>
+              <div class="proof wide"><strong>Release gate</strong><span>Rules turn evaluation results into a clear pass or block decision.</span></div>
             </div>
           </article>
+
+          <article class="project">
+            <div>
+              <div class="project-label mono">Business Analytics · 2026</div>
+              <h3>Revenue Guard</h3>
+              <p>Built during my MBA to answer a practical management question: which customer portfolio needs attention, and why? I kept KPI calculations in controlled PostgreSQL views and used access rules to separate manager-level data.</p>
+              <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RLS</span></div>
+              <p class="project-note">The business dataset and source are private. The portfolio presents the architecture, anonymised results and validation approach.</p>
+            </div>
+            <div class="project-proof" aria-label="Revenue Guard project highlights">
+              <div class="proof"><strong>7</strong><span>Account portfolios compared</span></div>
+              <div class="proof"><strong>24 months</strong><span>Customer revenue history</span></div>
+              <div class="proof wide"><strong>Database logic</strong><span>Metrics remain in SQL views rather than being duplicated in the interface.</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="project-label mono">Process Automation · 2026</div>
+              <h3>Aurora Accounts Payable</h3>
+              <p>For this MBA case study, I automated the review of 494 accounting records. The workflow identifies duplicates, separates blocked entries and preserves the reason behind each decision instead of producing only a final total.</p>
+              <div class="tags"><span class="tag">Google Sheets</span><span class="tag">Apps Script</span><span class="tag">Gemini</span><span class="tag">Data Validation</span></div>
+              <p class="project-note">The original accounting data is private; only aggregated, anonymised results are shown.</p>
+            </div>
+            <div class="project-proof" aria-label="Aurora project highlights">
+              <div class="proof"><strong>494</strong><span>Records reviewed</span></div>
+              <div class="proof"><strong>402</strong><span>Entries cleared for processing</span></div>
+              <div class="proof wide"><strong>92 exceptions</strong><span>33 duplicates and 59 blocked entries retained for audit.</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="labs">
+          <p class="labs-title mono">Additional technical labs</p>
+          <div class="lab-grid">
+            <article class="lab-card">
+              <h3>Python QA Automation Framework</h3>
+              <p>My earlier Selenium/PyTest framework for practising Page Objects, negative test data, failure screenshots, REST checks and automated HTML reports.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">PyTest</span><span class="tag">Postman</span></div>
+              <div class="project-links"><a class="button small" href="qa-automation/" target="_blank" rel="noreferrer">View test dashboard ↗</a><a class="button small" href="https://github.com/HugoManuelPaulo/qa-automation-portfolio" target="_blank" rel="noreferrer">Repository ↗</a></div>
+            </article>
+            <article class="lab-card">
+              <h3>BMI Calculator — Android</h3>
+              <p>An early native Android exercise using Kotlin, XML layouts and two activities to calculate and display BMI.</p>
+              <div class="tags"><span class="tag">Kotlin</span><span class="tag">Android Studio</span><span class="tag">XML</span></div>
+              <div class="phone-stack" aria-label="BMI Calculator screenshots"><img src="assets/portfolio/bmi-input.jpg" alt="BMI input screen" loading="lazy"><img src="assets/portfolio/bmi-result.jpg" alt="BMI result screen" loading="lazy"></div>
+              <div class="project-links"><a class="button small" href="https://github.com/HugoManuelPaulo/CalculadoraIMCandroidapp" target="_blank" rel="noreferrer">Repository ↗</a></div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
